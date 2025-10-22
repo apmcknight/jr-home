@@ -4,16 +4,16 @@ layout: "pagecontent.njk"
 navbar: true
 hero:
   header: About Us
-  content: We transform spaces into luxurious environments...
+  content: Scroll down to read our story...
   image: "/assets/imgs/IMG_1655 Large.jpg"
-  cta:
-    - label: "View our Work"
-      url: "/projects/"
-    - label: "Get In Touch"
-      url: "/contact/"
+  # cta:
+  #   - label: "View our Work"
+  #     url: "/projects/"
+  #   - label: "Get In Touch"
+  #     url: "/contact/"
 contentlayout:
   - title: "About Us"
-  - content: "This is content"
+  - content: "More about us"
 ---
 
 # I'm Joey Rocha,
