@@ -1,0 +1,15 @@
+<section class="hero" style=" background-image: linear-gradient(rgba(0, 0, 0, 0.558), rgba(0, 0, 0, 0.4)), url('{{hero.image}}');">
+  <div class="container">
+    <div class="hero-content">
+      <h1>{{ hero.header }}</h1>
+      <p>{{ hero.content }}</p>
+      <div class="hero-buttons">
+        {% if hero.cta %}
+          {% for button in hero.cta %}
+            <a href="{{ button.url }}" class="btn btn-primary">{{ button.label }}</a>
+          {% endfor %}
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>

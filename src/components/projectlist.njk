@@ -1,0 +1,21 @@
+<!-- Project List -->
+<section class="blog">
+    <div class="container"> 
+        <div class="blog-grid" style="grid-template-columns: repeat(2, 1fr);">
+            {%- for project in collections.project -%}
+            <article class="blog-card">
+                <a href="{{project.url}}" style="cursor:pointer">
+                        <div class="blog-img">
+                            <img src="{{project.data.hero.image}}" alt="[{{project.data.description}}]">
+                        </div>
+                        <div class="blog-content">
+                            <h3>{{project.data.title}}</h3>
+                            <p class="blog-excerpt">{{project.data.description}}</p>
+                            <a href="{{project.url}}" class="read-more">View Project</a>
+                        </div>
+                </a>      
+            </article>
+            {%- endfor -%} 
+        </div>
+    </div>
+</section>

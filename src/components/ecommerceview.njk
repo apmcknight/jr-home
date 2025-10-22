@@ -1,0 +1,22 @@
+<!-- Project List -->
+<section class="blog">
+    <div class="container"> 
+        <div class="blog-grid" style="grid-template-columns: repeat(2, 1fr);">
+            {%- for product in collections.product -%}
+            <article class="blog-card">
+                <a href="{{product.url}}" style="cursor:pointer">
+                        <div class="blog-img">
+                            <img src="{{product.data.hero.image}}" alt="[{{product.data.description}}]">
+                        </div>
+                        <div class="blog-content">
+                            <h3>{{product.data.title}}</h3>
+                            <h4>{{product.data.sku}}</h4>
+                            <p class="blog-excerpt">{{product.data.description}}</p>
+                            <a href="{{product.url}}" class="read-more">View Item</a>
+                        </div>
+                </a>      
+            </article>
+            {%- endfor -%} 
+        </div>
+    </div>
+</section>
